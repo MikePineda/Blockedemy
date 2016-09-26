@@ -66,27 +66,44 @@
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h3 align=center class="modal-title" id="myModalLabel">Inicia sesión e ingresa a nuestros cursos!</h4>
+    <p align="center"><img src="assets/img/logo.png"  class="img-responsive" alt="Logo" width="300" height="124" >
   </div>
-  <div class="modal-body">
+  <!-- Begin # DIV Form -->
+                <div id="div-forms">
 
-
-     
-        <p align="center"><img src="assets/img/cursos3.jpg" class="img-thumbnail" alt="Perro" width="250" height="187">
-		
-
-    
-      <p> Raza: 20xx
-      <p>Sexo: Masculino
-        <p> Edad: Adulto
-          <p> Tamaño: Grande
-            <p> Se lleva bien con: Niños y otros animales
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                              <p align="left">  <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Teclea tu usuario y contraseña.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Usuario">
+				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Recuérdame
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block">Iniciar sesión</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu contraseña?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Registrarme</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
 
       
       </div> <!-- div del row principal -->
 
   <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-    <button type="button" class="btn btn-inverse">Adoptar</button>
+    
   </div>
 </div>
 </div>
