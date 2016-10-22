@@ -30,7 +30,7 @@
     
 </head>
 <body>
-  <!-- NAV SECTION -->
+  !-- NAV SECTION -->
          <div class="navbar navbar-inverse navbar-fixed-top">
        
         <div class="container">
@@ -40,14 +40,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">YOUR LOGO</a>
+                <a href="#" class="navbar-left"><img src="assets/img/logo.png" alt="Blockedemy" class="img-responsive" height="200" width ="119"></a>
             </div>
             <div class="navbar-collapse collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="Contact.html">HIRE</a></li>
-                    <li><a href="Contact.html">mail: info@domain.com</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html"> ¿Quiénes somos?</a></li>
+                    <li class="active"><a href="Contact.html">Contacto</a></li>
+                    <li><a href="download.html">Descargar</a></li>
+                    <li><a data-toggle="modal" data-target="#login"  class="clickable"> Inicia sesión</a> </li>
+                    <li><a href="Contact.html"> Block@edemy.com</a></li>
                 </ul>
             </div>
            
@@ -55,7 +57,56 @@
     </div>
      <!--END NAV SECTION -->
     
-    <!--ABOUT PAGE SECTION-->
+<!--LOGIN MODAL -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-md" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h3 align=center class="modal-title" id="myModalLabel">Inicia sesión e ingresa a nuestros cursos!</h4>
+    <p align="center"><img src="assets/img/logo.png"  class="img-responsive" alt="Logo" width="300" height="124" >
+  </div>
+  <!-- Begin # DIV Form -->
+                <div id="div-forms">
+
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		<div id="div-login-msg">
+                              <p align="left">  <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Teclea tu usuario y contraseña.</span>
+                            </div>
+				    		<input id="login_username" class="form-control" type="text" placeholder="Usuario">
+				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Recuérdame
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-info btn-lg btn-block">Iniciar sesión</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu contraseña?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Registrarme</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+      
+      </div> <!-- div del row principal -->
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
     
     <div class="container"  >
         <div class="row top-pad">
@@ -104,7 +155,8 @@
                     </form>
                 </div>
                 <div class="col-md-6">
-                   <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999841.293321206!2d-75.80920404999999!3d42.75594204999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York!5e0!3m2!1sen!2s!4v1395313088825" s ></iframe>
+                   <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999841.293321206!2d-75.80920404999999!3d42.75594204999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York!5e0!3m2!1sen!2s!4v1395313088825" s ></iframe>
+
                 </div>
             </div>
         </div>
