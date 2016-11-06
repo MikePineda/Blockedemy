@@ -1,19 +1,7 @@
-﻿
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
+﻿.clickable {
+    cursor: pointer;
+}
 
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-
-/*=======================================
-    GENERAL STYLES
-==================================================*/
 
 body {
           font-family:'Open Sans', sans-serif;
@@ -21,13 +9,18 @@ body {
     background-image:url(../img/sativa.png);
 }
 
-.clickable {
-    cursor: pointer;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family:'Open Sans', sans-serif;
 }
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+
+
 
 h1 {
     line-height:50px;
@@ -87,27 +80,56 @@ p {
 .g-pad-bottom {
     padding-bottom:40px;
 }
+/*FIGURAS EN EL CONTENIDO DE LAS BOXES****************************************************/
+figure{
+    margin:0;
+    display: inline-block;
+    border: 1px solid blue;
+    position:  relative;
+    align-content: center;
+}
+figcaption{
+    color:#fff;
+    transition: all 0.3s;
+    opacity: .5;
+    display: none;
+    background:#000;
+    position:absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    padding: 3%;
+     
+}
+/*********************************************************************************************/
 
 
-
+/*********************************************************************************************/
+figure:hover figcaption{
+display: block;
+}
 .form-control {
         background-color: rgba(255, 255, 255, 0);
 }
 /* ===========================================================
    NAVBAR CHANGES   
    ============================================================*/
+ 
 .navbar {
 	font-size: 16px;
 }
 
 .navbar-inverse {
-background: #424242;
+background: black;
 min-height: 60px;
 padding-top: 5px;
 
 }
 
+.navbar-inverse .navbar-nav > .active > a {
+    	background: #424242;
 
+}
 
 .navbar-inverse .navbar-brand {
 	color: #ffffff;
@@ -131,10 +153,11 @@ border-color: #424242;
 /*=======================================
     HOME SECTION STYLES
 ==================================================*/
-
+@font-face{
+    font-family: "escritura";
+    src: url('escritura.ttf'), format('embed-opentype'), url('escritura.ttf') format('opentype');
+}
 #home-sec { 
-  
-    
 background: url(../img/3.jpeg) no-repeat 50% 50%;
 background-attachment: fixed;
 -webkit-background-size: cover;
@@ -144,8 +167,8 @@ background-size: cover;
 width: 100%;
 display: block;
 height: auto;
- padding-top:190px;
-    padding-bottom:200px;
+ padding-top:100px;
+    padding-bottom:150px;
     color:#000;
 }
 
@@ -161,7 +184,7 @@ height: auto;
 }
 
 .head-last {
-    font-size:18px ;
+    font-size:40px ;
     font-weight:900;
     padding:35px 20px 60px 20px;
 }
@@ -182,7 +205,7 @@ border: 1px solid #e1e1e1;
 
 
 #footer {
-    background-color:#424242;
+    background-color:black;
     color:#fff;
     padding:20px 50px 20px 50px;
     text-align:right;

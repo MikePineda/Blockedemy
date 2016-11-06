@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html lang="en">
+   <head>
      <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Blockedemy </title>
+    <title>Blockedemy | cursos</title>
+   
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     <!--REQUIRED STYLE SHEETS-->
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -27,10 +30,18 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
     
 </head>
-<body>
-   <!-- NAV SECTION -->
+    <body>
+ <!-- NAV SECTION -->
          <div class="navbar navbar-inverse navbar-fixed-top">
        
         <div class="container">
@@ -44,10 +55,10 @@
             </div>
             <div class="navbar-collapse collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="index.html">Inicio</a></li>
                     <li><a href="about.html"> ¿Quiénes somos?</a></li>
                     <li><a href="contact.html">Contacto</a></li>
-                    <li  class="active"><a href="download.html">Descargar</a></li>
+                    <li><a href="download.html">Descargar</a></li>
                     <li><a data-toggle="modal" data-target="#login"  class="clickable"> Inicia sesión</a> </li>
                     <li><a href="contact.html"> Block@edemy.com</a></li>
                 </ul>
@@ -108,89 +119,166 @@
 </div>
 </div>
     
-<!--LOGIN MODAL -->
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog modal-md" role="document">
-<div class="modal-content">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 align=center class="modal-title" id="myModalLabel">Inicia sesión e ingresa a nuestros cursos!</h4>
-    <p align="center"><img src="assets/img/logo.png"  class="img-responsive" alt="Logo" width="300" height="124" >
-  </div>
-  <!-- Begin # DIV Form -->
-                <div id="div-forms">
 
-                    <!-- Begin # Login Form -->
-                    <form id="login-form">
-		                <div class="modal-body">
-				    		<div id="div-login-msg">
-                              <p align="left">  <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-login-msg">Teclea tu usuario y contraseña.</span>
-                            </div>
-				    		<input id="login_username" class="form-control" type="text" placeholder="Usuario">
-				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Recuérdame
-                                </label>
-                            </div>
-        		    	</div>
-				        <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-info btn-lg btn-block">Iniciar sesión</button>
-                            </div>
-				    	    <div>
-                                <button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu contraseña?</button>
-                                <button id="login_register_btn" type="button" class="btn btn-link">Registrarme</button>
-                            </div>
-				        </div>
-                    </form>
-                    <!-- End # Login Form -->
 
-      
-      </div> <!-- div del row principal -->
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    <!-- Wrapper for slides -->
+ <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="assets/img/pro4.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>CURSOS GRATIS</h3>
+          <p>Aprede a programar con nuestros cursos 100% gratuitos.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="assets/img/pro5.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>CURSOS DE USUARIOS PRO</h3>
+          <p>Despliega tus conocimientos adquiridos en el ambito de la programacion, incluyendo series de metodos 
+              importantes para tu aprendizaje a costos accesibles!
+            <p>
+        </div>
+      </div>
     
+      <div class="item">
+        <img src="assets/img/pro3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Expande tu conocimiento</h3>
+          <p>Se autodidacta!</p>
+        </div>
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
-</div>
-</div>
-</div>
- <body>
-       <div class="container"  >
-        <div class="row top-pad">
-            <div  class="col-md-12" >
-                <h1 >Descargas locas aki</h1>          
-                         
-            </div>
+
+
+
+<section  >
+        <div class="container">
+            <h1>   Visión </h1>
+                <div class="row">
+                  
+                    <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                       
+                        <div class="panel-body">
+                             <h4 class="adjst" align="center"> Enseñar </h4>
+                            <p>
+                         Queremos dar a conocer que la programación no es algo de otro mundo, 
+                    que algo que se puede usar en la vida cotidiana y un niño tiene la capacidad de aprender.
+                           </p>
+ 
+                        </div>
+                    </div>        
+                    </div>
+                   <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                        <div class="panel-body">
+                             <h4 class="adjst" align="center">Fomentar la creatividad </h4>
+                            <p align="center">                           
+Queremos que nuestros alumnos aprendan sobre la lógica y utilidad de la programación,
+ formando mentes creativas y moldearlos pensar de una manera diferente a la que estan acostumbrados.                  
+                                </p>
+                        </div>
+                    </div> 
+                            
+                    </div>
+                     <div class="col-md-4 col-sm-4">
+                          <div class="panel panel-default">
+                       
+                        <div class="panel-body">
+                             <h4 class="adjst" align="center">Darnos a conocer </h4>
+                            <p align ="center">
+Como empresa nueva en el fomento de la educación, queremos que nuestos cursos sean conocidos en el medio
+educativo. Aportanto nuestros conocimientos a la enseñanza.
+                                </p>
+                        </div>
+                    </div> 
+                            
+                    </div>
+                </div>
           
         </div>
-    </div>
-     </body>
+    </section>
 
 
- <!--FOOTER SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div id="footer">
-       
-        2016 www.stemen.com | All Right Reserved  
+        2016 www.Blockedemy.com | All Right Reserved  
          
     </div>
-    <!-- END FOOTER SECTION -->
 
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <!-- CORE JQUERY  -->
-       
-        <script src="assets/plugins/jquery-1.10.2.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+            
+        </script>
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP CORE SCRIPT   -->
     <script src="assets/plugins/bootstrap.min.js"></script>  
      <!-- ISOTOPE SCRIPT   -->
     <script src="assets/plugins/jquery.isotope.min.js"></script>
     <!-- PRETTY PHOTO SCRIPT   -->
     <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
-</body>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    </body>
 </html>
